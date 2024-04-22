@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 21 21:16:23 PDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>32 seconds (32152 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verification of API Response time is not less than 3 seconds", "Optional[Exchange Rates API validation]"</td>
+<td><div><pre>java.lang.NullPointerException
+	at io.restassured.path.json.JsonPath.getLong(JsonPath.java:340)
+	at apiStepDef.apiTestStepDef.the_api_response_timestamp_should_not_be_less_than_3_seconds_from_the_current_time_in_seconds(apiTestStepDef.java:96)
+	at ?.the API response timestamp should not be less than 3 seconds from the current time in seconds(file:///C:/Users/shree/Downloads/APITest/src/test/Resource/Feature/apiTest.feature:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace46852536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace46852536'><pre>java.lang.NullPointerException
+	at io.restassured.path.json.JsonPath.getLong(JsonPath.java:340)
+	at apiStepDef.apiTestStepDef.the_api_response_timestamp_should_not_be_less_than_3_seconds_from_the_current_time_in_seconds(apiTestStepDef.java:96)
+	at ?.the API response timestamp should not be less than 3 seconds from the current time in seconds(file:///C:/Users/shree/Downloads/APITest/src/test/Resource/Feature/apiTest.feature:20)
+</pre></div></td>
+<td>1</td>
+<td>Runner.TestRunner@370736d9</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate JSON schema", "Optional[Exchange Rates API validation]"</td>
+<td><div><pre>java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at apiStepDef.apiTestStepDef.the_api_response_should_match_the_json_schema(apiTestStepDef.java:151)
+	at ?.the API response should match the JSON schema(file:///C:/Users/shree/Downloads/APITest/src/test/Resource/Feature/apiTest.feature:39)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2132736278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2132736278'><pre>java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at apiStepDef.apiTestStepDef.the_api_response_should_match_the_json_schema(apiTestStepDef.java:151)
+	at ?.the API response should match the JSON schema(file:///C:/Users/shree/Downloads/APITest/src/test/Resource/Feature/apiTest.feature:39)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@370736d9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful API Call and Valid Price Returned", "Optional[Exchange Rates API validation]"</td>
+<td></td>
+<td>18</td>
+<td>Runner.TestRunner@370736d9</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Various Status Codes and Status Field Returned by API", "Optional[Exchange Rates API validation]"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@370736d9</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of USD to AED Exchange Rate Range", "Optional[Exchange Rates API validation]"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@370736d9</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verification of Currency Pairs Returned", "Optional[Exchange Rates API validation]"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@370736d9</td></tr>
+</table><p>
+</body>
+</html>

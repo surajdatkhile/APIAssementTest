@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32152" started-at="2024-04-22T04:16:23Z" finished-at="2024-04-22T04:16:55Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@370736d9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="32152" started-at="2024-04-22T04:16:23Z" finished-at="2024-04-22T04:16:55Z">
+      <class name="Runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunner@370736d9]" name="setUpClass" is-config="true" duration-ms="1985" started-at="2024-04-21T21:16:23Z" finished-at="2024-04-21T21:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@334ebcaa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@370736d9]" name="runScenario" duration-ms="18372" started-at="2024-04-21T21:16:25Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-21T21:16:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful API Call and Valid Price Returned"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Exchange Rates API validation]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@370736d9]" name="runScenario" duration-ms="1115" started-at="2024-04-21T21:16:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-21T21:16:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Various Status Codes and Status Field Returned by API"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Exchange Rates API validation]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@370736d9]" name="runScenario" duration-ms="1510" started-at="2024-04-21T21:16:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-21T21:16:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verification of API Response time is not less than 3 seconds"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Exchange Rates API validation]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at io.restassured.path.json.JsonPath.getLong(JsonPath.java:340)
+	at apiStepDef.apiTestStepDef.the_api_response_timestamp_should_not_be_less_than_3_seconds_from_the_current_time_in_seconds(apiTestStepDef.java:96)
+	at ✽.the API response timestamp should not be less than 3 seconds from the current time in seconds(file:///C:/Users/shree/Downloads/APITest/src/test/Resource/Feature/apiTest.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@370736d9]" name="runScenario" duration-ms="1175" started-at="2024-04-21T21:16:46Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-21T21:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validation of USD to AED Exchange Rate Range"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Exchange Rates API validation]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@370736d9]" name="runScenario" duration-ms="1136" started-at="2024-04-21T21:16:47Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-21T21:16:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verification of Currency Pairs Returned"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Exchange Rates API validation]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@370736d9]" name="runScenario" duration-ms="921" started-at="2024-04-21T21:16:48Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-21T21:16:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate JSON schema"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Exchange Rates API validation]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Schema to use cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at apiStepDef.apiTestStepDef.the_api_response_should_match_the_json_schema(apiTestStepDef.java:151)
+	at ✽.the API response should match the JSON schema(file:///C:/Users/shree/Downloads/APITest/src/test/Resource/Feature/apiTest.feature:39)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@370736d9]" name="tearDownClass" is-config="true" duration-ms="5850" started-at="2024-04-21T21:16:49Z" finished-at="2024-04-21T21:16:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
