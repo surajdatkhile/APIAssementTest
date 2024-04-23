@@ -1,4 +1,5 @@
-package apitestingassesmentTC;
+package apiTestingTC;
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -21,6 +22,6 @@ public class ValidateSchema {
 	        .get(baseURL)
 	      .then()
 	        .assertThat()
-	        .body(JsonSchemaValidator.matchesJsonSchemaInClasspath(jsonSchemaPath));
+	        .body(JsonSchemaValidator.matchesJsonSchema(new File("src/test/Resource/TestData/schema.json")));
 	  }
 	}
